@@ -20,7 +20,7 @@ public abstract class Predajna<E> {
         if (this.ponuka.isEmpty()) {
             vypis = "Ospravedlnujeme sa, nemame pre Vas ziadnu ponuku.";
         } else {
-            System.out.println("Vita Vas " + this.nazov);
+            System.out.println("Vita vas " + this.nazov);
             for (var prvok: this.ponuka) {
                 vypis = prvok.toString();
             }

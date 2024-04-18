@@ -24,6 +24,6 @@ public class Kolacik {
             alergeny += String.format("%s, ", alergen);
         }
         alergeny = alergeny.substring(0, alergeny.length() - 2);
-        return String.format("%s -> Hmotnost:%.2fg Cena:%.2f€ %n%24s %n%30s", this.nazov, this.hmostnost, this.cena, alergeny);
+        return String.format("%s -> Hmotnost:%dg Cena:%.2f€ %n%24s", this.nazov, this.hmostnost, this.cena, alergeny);
     }
 }

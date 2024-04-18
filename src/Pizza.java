@@ -6,7 +6,7 @@ public class Pizza {
     private String nazov;
 
     public Pizza(String nazov) {
-        this.suroviny = new ArrayList<Surovina>();
+        this.suroviny = new ArrayList<>();
         this.nazov = nazov;
     }
 
@@ -26,6 +26,7 @@ public class Pizza {
         } else {
             this.veganska = true;
         }
+        System.out.println("Pizza nie je veganska.");
         return this.veganska;
     }
 
@@ -37,6 +38,7 @@ public class Pizza {
                 }
             }
         }
+        System.out.println("Pizzu si zvegancil");
     }
 
     public double dajHmotnost() {
